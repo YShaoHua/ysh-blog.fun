@@ -1,23 +1,38 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <p class="todo-text">todos</p>
+    <todo-box></todo-box>
   </div>
 </template>
 
-<script>
+<script type="text/babel">
+import todoBox from './components/HelloWorld.vue'
+
 export default {
-  name: 'App'
+  components: {
+    todoBox
+  },
+  data () {
+    return {
+    }
+  }
+  // created: {
+  // }
 }
 </script>
 
-<style>
+<style lang="stylus">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  padding-top: 60px;
+  height: 100vh;
+  .todo-text {
+    font-size: 88px;
+    color: rgba(175, 47, 47, 0.15);
+  }
 }
 </style>
