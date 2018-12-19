@@ -9,6 +9,7 @@
       <div class="todo-inout">
         <input v-model="addInformation"
                class="todo-input"
+               oninput="this.value = this.value.replace(/[^0-9]/g, '')"
                @keyup.enter="addInformationList"
                placeholder="What nends to be done"/>
       </div>
@@ -46,7 +47,22 @@ export default {
       informationList: []
     }
   },
+  created () {
+    this.todosssss()
+  },
   methods: {
+    /**
+     * 猜测接口
+     */
+    todosssss () {
+      this.$axios.get('/common/getDeptList', {
+        name: '1231'
+      }).then(() => {
+        console.log(123123)
+      }).catch(() => {
+        console.log(123123, 2222)
+      })
+    },
     /**
      * 添加数据
      */
@@ -95,9 +111,6 @@ export default {
     display: flex;
     border: 1px solid #f5f5f5;
     align-items: center;
-  }
-  .delete-boder {
-    color green
   }
   .todo-input {
     width: 380px;
