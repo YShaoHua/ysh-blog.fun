@@ -5,9 +5,21 @@
            class="header__icon"/>
       <div class="header__nav-bar">
         <ul>
-          <li>BLOG</li>
-          <li>LEARN</li>
-          <li>GIT HUB</li>
+          <li>
+            <router-link to="/blog">
+              BLOG
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/learn">
+              LEARN
+            </router-link>
+          </li>
+          <li @click="goToGitHub">
+            <router-link to="">
+              GIT HUB
+            </router-link>
+          </li>
         </ul>
         <p class="hello">hello world !!!</p>
       </div>
@@ -25,6 +37,13 @@ export default {
   created () {
   },
   methods: {
+    /**
+     * 前往gitHub
+     */
+    goToGitHub() {
+      console.log(111, 222)
+      window.open('https://github.com/YShaoHua')
+    },
   }
 }
 </script>
@@ -54,7 +73,9 @@ export default {
           list-style-type none
           margin 0 40px
           font-weight bold
+          a
+            font-size 16px
       .hello
-        font-size 30px
+        font-size 26px
         color rgba(175, 47, 47, .15)
 </style>
