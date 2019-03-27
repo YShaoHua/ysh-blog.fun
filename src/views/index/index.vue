@@ -5,19 +5,11 @@
            class="header__icon"/>
       <div class="header__nav-bar">
         <ul>
-          <li>
-            <router-link to="/blog">
-              BLOG
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/learn">
-              LEARN
-            </router-link>
-          </li>
-          <li @click="goToGitHub">
-            <router-link to="">
-              GIT HUB
+          <li v-for="(item, index) in navigationList" 
+              :key="index"
+              @click="item.name == 'GIT HUB' ? goToGitHub() : ''">
+            <router-link :to="item.location">
+              {{item.name}}
             </router-link>
           </li>
         </ul>
@@ -32,6 +24,20 @@
 export default {
   data () {
     return {
+      navigationList: [
+        {
+          name: 'BLOG',
+          location: '/blog',
+        },
+        // {
+        //   name: 'LEARN',
+        //   location: '/learn',
+        // },
+        {
+          name: 'GIT HUB',
+          location: '',
+        },
+      ],
     }
   },
   created () {
@@ -41,7 +47,6 @@ export default {
      * 前往gitHub
      */
     goToGitHub() {
-      console.log(111, 222)
       window.open('https://github.com/YShaoHua')
     },
   }
@@ -75,6 +80,7 @@ export default {
           font-weight bold
           a
             font-size 16px
+            color #888
       .hello
         font-size 26px
         color rgba(175, 47, 47, .15)

@@ -5,6 +5,8 @@ import index from '@/views/index/index.vue'
 import blog from '@/views/blog/index.vue'
 import learn from '@/views/learn/index.vue'
 
+import beginToContact from '@/views/blog/content/beginToContact.vue'
+
 // import HelloWorld from '@/components/HelloWorld'
 
 Vue.use(Router)
@@ -21,14 +23,19 @@ export default new Router({
         {
           path: '/blog',
           name: 'theBlog',
-          component: blog
+          component: blog,
         },
         {
           path: '/learn',
           name: 'theLearn',
-          component: learn
+          component: learn,
         }
       ]
-    }
+    },
+    {
+      path: '/blog/begin-to-contact',
+      name: 'theBeginToContact',
+      component: beginToContact,
+    },
   ]
 })

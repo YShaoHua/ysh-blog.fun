@@ -1,5 +1,6 @@
 <template>
-  <div class="learn-box">
+  <div class="begin-to__contact">
+    <img :src="img"/>
   </div>
 </template>
 
@@ -7,6 +8,7 @@
 export default {
   data () {
     return {
+      img: require('@/assets/images/img/img1.jpg')
     }
   },
   created () {
@@ -17,6 +19,11 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.learn-box
+.begin-to__contact
+  width 100%
+  min-height 100vh
   background-color #f8f8f8
+  >img 
+    width 100%
+    height 500px
 </style>
