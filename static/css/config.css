@@ -1,0 +1,33 @@
+.blog-box {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f8f8f8;
+  display: inline-block;
+}
+.bg-img {
+    width: 1100px;
+    height: 300px;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    z-index: 0;
+    transform: translate(-50%);
+    left: 50%;
+  }
+.content {
+    padding: 40px;
+    width: 920px;
+    border: 1px solid rgba(136, 136, 136, 0.2);
+    border-radius: 10px 10px 6px 6px;
+    margin: 160px auto 0;
+    z-index: 99;
+    position: relative;
+    background: #fff;
+    margin-bottom: 30px;
+}
+.content p {
+  color: #555;
+  margin: 20px 0;
+}
+.content h3,h4,h5 {
+  margin: 20px 0;
+}

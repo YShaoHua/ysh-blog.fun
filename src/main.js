@@ -5,6 +5,9 @@ import App from './App'
 import router from './router'
 import axios from 'axios'
 import VueResource from 'vue-resource'
+import goBack from '@/components/goBack/index.js'
+Vue.use(goBack)
+
 Vue.prototype.$axios = axios
 
 Vue.use(VueResource)
@@ -16,5 +19,5 @@ new Vue({
   el: '#app',
   router,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
 })
