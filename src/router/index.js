@@ -12,8 +12,8 @@ import vueRouter from '@/views/blog/contentList/2018-02-20/vueRouter.vue' // rou
 import copy from '@/views/blog/contentList/2018-03-11/copy.vue' // 深浅拷贝
 import rearrangement from '@/views/blog/contentList/2018-04-02/rearrangement.vue' // 重排和重绘
 import flipAnimation from '@/views/blog/contentList/2018-05-11/flipAnimation.vue' // 翻转动画
-import dragAndDrop from '@/views/blog/contentList/2018-06-02/dragAndDrop.vue' // 翻转动画
-import todo from '@/views/blog/contentList/2018-06-02/typeTwo.vue' // 翻转动画
+import dragAndDrop from '@/views/blog/contentList/2018-06-02/dragAndDrop.vue' // 鼠标拖拽效果
+import adapter from '@/views/blog/contentList/2018-06-27/adapter.vue' // 移动端适配
 
 // import HelloWorld from '@/components/HelloWorld'
 
@@ -79,9 +79,9 @@ export default new Router({
           component: dragAndDrop,
         }, 
         {
-          path: '/blog/todo',
-          name: 'todo',
-          component: todo,
+          path: '/blog/adapter',
+          name: 'adapter',
+          component: adapter,
         }, 
       ]
     },

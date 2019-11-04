@@ -88,6 +88,7 @@ export default {
   margin: 0 auto;
   padding-top: 20px;
   position: relative;
+  display flex
 }
 #list li {
   background: #03a9f4;

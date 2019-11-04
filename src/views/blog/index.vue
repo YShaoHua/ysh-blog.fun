@@ -23,6 +23,14 @@ export default {
     return {
       bolgList: [
         {
+          image: require("@/assets/images/img/img9.jpeg"),
+          title: "移动端适配",
+          introduce: "Learning js",
+          conten: "解决适配问题！～",
+          time: "2018年6月27日",
+          routerName: "adapter"
+        },
+        {
           image: require("@/assets/images/img/img8.jpg"),
           title: "拖拽效果",
           introduce: "Learning js",
