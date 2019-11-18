@@ -22,4 +22,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+.content {
+  min-height: 500px;
+}
 </style>

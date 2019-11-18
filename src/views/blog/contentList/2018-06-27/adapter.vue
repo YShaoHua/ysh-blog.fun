@@ -96,6 +96,7 @@
           <html lang="en" style="font-size: 85.3333%;"> 在iphone5下
         </script>
       </pre>
+      <go-Back></go-Back>
     </div>
   </div>
 </template>

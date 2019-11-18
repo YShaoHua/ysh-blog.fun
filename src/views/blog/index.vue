@@ -9,9 +9,10 @@
       <div :style="`background-image: url(${item.image})`"></div>
       <div>
         <p>{{item.title}}</p>
-        <p>{{item.introduce}}</p>
+        <!-- <p>{{item.introduce}}</p> -->
+        <p> </p>
         <p>{{item.conten}}</p>
-        <p>{{item.time}}</p>
+        <!-- <p>{{item.time}}</p> -->
       </div>
     </div>
   </div>
