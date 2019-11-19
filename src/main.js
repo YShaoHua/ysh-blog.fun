@@ -6,9 +6,14 @@ import router from './router'
 import axios from 'axios'
 import VueResource from 'vue-resource'
 import goBack from '@/components/goBack/index.js'
-Vue.use(goBack)
+import '../theme/index.css'
+import Element from 'element-ui'
+import toast from './utils/toast.js'
 
-Vue.prototype.$axios = axios
+Vue.use(toast)
+Vue.use(goBack)
+Vue.use(Element)
+// Vue.prototype.$axios = axios
 
 Vue.use(VueResource)
 

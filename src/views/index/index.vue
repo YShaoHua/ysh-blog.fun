@@ -44,7 +44,7 @@ export default {
      * 前往gitHub
      */
     goToGitHub() {
-      window.open("https://github.com/YShaoHua");
+      // window.open("https://github.com/YShaoHua");
     }
   }
 };

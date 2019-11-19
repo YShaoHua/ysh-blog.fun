@@ -14,6 +14,7 @@ import rearrangement from '@/views/blog/contentList/2018-04-02/rearrangement.vue
 import flipAnimation from '@/views/blog/contentList/2018-05-11/flipAnimation.vue' // 翻转动画
 import dragAndDrop from '@/views/blog/contentList/2018-06-02/dragAndDrop.vue' // 鼠标拖拽效果
 import adapter from '@/views/blog/contentList/2018-06-27/adapter.vue' // 移动端适配
+import toastBox from '@/views/blog/contentList/toast/index.vue' // toast提示
 
 // import HelloWorld from '@/components/HelloWorld'
 
@@ -82,6 +83,11 @@ export default new Router({
           path: '/blog/adapter',
           name: 'adapter',
           component: adapter,
+        },
+        {
+          path: '/blog/toast',
+          name: 'toast',
+          component: toastBox,
         }, 
       ]
     },

@@ -2,7 +2,8 @@
   <div class="blog-box">
     <img :src="img" class="bg-img"/>
     <div class="content">
-      <p>Boom ！！！</p>
+      <p>hello world !!!</p>
+      <go-Back></go-Back>
     </div>
   </div>
 </template>
@@ -23,6 +24,10 @@ export default {
 
 <style lang="stylus" scoped>
 .content {
-  min-height: 500px;
+  min-height: 300px;
+  p {
+    text-align center;
+    margin-bottom: 180px;
+  }
 }
 </style>
