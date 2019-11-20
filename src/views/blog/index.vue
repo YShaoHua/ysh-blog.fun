@@ -35,6 +35,14 @@ export default {
           page: 1,
           content: [
             {
+              image: require("@/assets/images/img/img11.jpeg"),
+              title: "Promise",
+              introduce: "Learning vue",
+              conten: "了解Promise的异步管理方式",
+              time: "2018年2月3日",
+              routerName: "Promise"
+            },
+            {
               image: require("@/assets/images/img/img9.jpeg"),
               title: "移动端适配",
               introduce: "Learning js",
@@ -82,14 +90,6 @@ export default {
               time: "2018年2月20日",
               routerName: "vueRouter"
             },
-            {
-              image: require("@/assets/images/img/img3.jpeg"),
-              title: "[$on, $emit]",
-              introduce: "Learning vue",
-              conten: "vue2父子组件间相互通信",
-              time: "2018年2月3日",
-              routerName: "vueCommunication"
-            },
           ]
         },{
           page: 2,
@@ -101,6 +101,13 @@ export default {
               conten: "写一个全局toast提示组件",
               time: "2018年1月28日",
               routerName: "toast"
+            },{
+              image: require("@/assets/images/img/img3.jpeg"),
+              title: "[$on, $emit]",
+              introduce: "Learning vue",
+              conten: "vue2父子组件间相互通信",
+              time: "2018年2月3日",
+              routerName: "vueCommunication"
             },{
               image: require("@/assets/images/img/img2.jpeg"),
               title: "css居中",

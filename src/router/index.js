@@ -15,13 +15,14 @@ import flipAnimation from '@/views/blog/contentList/2018-05-11/flipAnimation.vue
 import dragAndDrop from '@/views/blog/contentList/2018-06-02/dragAndDrop.vue' // 鼠标拖拽效果
 import adapter from '@/views/blog/contentList/2018-06-27/adapter.vue' // 移动端适配
 import toastBox from '@/views/blog/contentList/toast/index.vue' // toast提示
+import promise from '@/views/blog/contentList/Promise/index.vue' // toast提示
 
 // import HelloWorld from '@/components/HelloWorld'
 
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
+  // mode: 'history',
   routes: [
     {
       path: '',
@@ -88,7 +89,12 @@ export default new Router({
           path: '/blog/toast',
           name: 'toast',
           component: toastBox,
-        }, 
+        },
+        {
+          path: '/blog/promise',
+          name: 'Promise',
+          component: promise,
+        },
       ]
     },
   ]

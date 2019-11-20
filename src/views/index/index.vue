@@ -44,6 +44,10 @@ export default {
      * 前往gitHub
      */
     goToGitHub() {
+      this.$message({
+        showClose: true,
+        message: '小杨还太菜，暂时拿不出手～～～～'
+      });
       // window.open("https://github.com/YShaoHua");
     }
   }
